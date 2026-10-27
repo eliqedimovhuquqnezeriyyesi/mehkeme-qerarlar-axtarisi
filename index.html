@@ -1,1 +1,95 @@
-
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Məhkəmə Qərarlarının Axtarış Portalı</title>
+    <style>
+        :root {
+            font-family: system-ui, Arial, sans-serif;
+            color: #182338;
+            background: #f4f6fa;
+        }
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #172b4d;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #5a6880;
+            margin-bottom: 40px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px #d9deea;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px #c6ccda;
+        }
+        .card h2 {
+            color: #174d99;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #5a6880;
+            margin: 0;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Logo-esas.png" alt="Portal Logo" class="logo" loading="lazy">
+        
+        <h1>Məhkəmə qərarlarının axtarışı portalı</h1>
+        <p class="subtitle">Axtarış etmək istədiyiniz məhkəmə instansiyasını seçin:</p>
+        
+        <div class="cards">
+            <a href="https://eliqedimovhuquqnezeriyyesi.com/" class="card">
+                <h2>Konstitusiya Məhkəməsi</h2>
+                <p>Plenumun qərarları və qərardadları üzrə axtarış</p>
+            </a>
+            <a href="https://eliqedimovhuquqnezeriyyesi.com/" class="card">
+                <h2>Ali Məhkəmə</h2>
+                <p>Ali Məhkəmənin qərarları üzrə axtarış</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
